@@ -13,16 +13,17 @@ import java.util.ArrayList;
  */
 public class Reporte {
 
-    private String nombre;
-    private String carrera;
-    private String ciclo;
-    
-    public Reporte(String n, String c, String cic){
+    protected String nombre;
+    protected String carrera;
+    protected String ciclo;
+
+    // constructor 
+    public Reporte(String n, String c, String cic) {
         nombre = n;
         carrera = c;
         ciclo = cic;
     }
-    
+
     public void establecerNombre(String n) {
         nombre = n;
     }
@@ -47,4 +48,15 @@ public class Reporte {
         return ciclo;
     }
 
+    @Override
+    public String toString() {
+        String cadena = String.format("Nombre: %s\n"
+                + "Carrera: %s\n"
+                + "Ciclo: %s\n", 
+                nombre,
+                carrera,
+                ciclo);
+        return cadena;
+        
+    }
 }

@@ -6,6 +6,11 @@ public class EstudianteDistancia extends Estudiante{
     private double costoAsignatura;
     private double matriculaDistancia;
     
+    //constructor 
+    public EstudianteDistancia(String n, String ap, String iden, int e){
+        super(n, ap, iden, e);
+    }
+    
     
     // 2.  Método establecerNumeroAsginaturas(numero: Real)
     public void establecerNumeroAsginaturas(int numero){

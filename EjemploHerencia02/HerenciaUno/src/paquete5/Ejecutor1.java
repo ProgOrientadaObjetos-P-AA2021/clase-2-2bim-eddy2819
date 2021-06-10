@@ -10,6 +10,7 @@ public class Ejecutor1 {
     public static void main(String[] args) {
 
         // Creación de un objeto de tipo EstudianteDistancia
+        System.out.println("Estudiante Distancia");
         String nombre = "René";
         String apellido = "Elizalde";
         String identificacion = "110011";
@@ -23,5 +24,20 @@ public class Ejecutor1 {
         estDistancia.calcularMatriculaDistancia();
         
         System.out.println(estDistancia);
+        
+         System.out.println("======================");
+        System.out.println("Estudiante Presencial");
+        String nom = "Maria";
+        String ape = "Morales";
+        String ident = "11055649";
+        int ed = 26;
+        int numCredito = 8;
+        double costoCredito = 40.5;
+        EstudiantePresencial estupresen = new EstudiantePresencial(nom,ape,
+                ident,ed,numCredito,costoCredito);
+        estupresen.calcularMatriculaPresencial();
+        
+        System.out.println(estupresen);
+       
     }
 }

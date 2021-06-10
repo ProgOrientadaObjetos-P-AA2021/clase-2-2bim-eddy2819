@@ -14,7 +14,7 @@ public class EjecutaEstudiante01 {
 
         // a.  Declarar Variables
         Scanner entrada = new Scanner(System.in);
-        entrada.useLocale(Locale.US);
+        entrada.useLocale(Locale.US);// siempre use como separador de decimales el punto
 
         String nombresEst;
         String apellidosEst;
@@ -55,7 +55,7 @@ public class EjecutaEstudiante01 {
                 + "del estudiante");
         costoCred = entrada.nextDouble();
         
-        entrada.nextLine();
+        entrada.nextLine(); // limpieza de bafer
         
         // se hace uso de los métodos establecer para asignar valores
         // a los datos (atributos) del objeto

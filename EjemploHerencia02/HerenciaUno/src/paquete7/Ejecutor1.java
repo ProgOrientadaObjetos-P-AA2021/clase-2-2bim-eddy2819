@@ -10,8 +10,10 @@ import paquete9.EstudianteDistancia;
 public class Ejecutor1 {
 
     public static void main(String[] args) {
+        
 
         // Creación de un objeto de tipo EstudianteDistancia
+        System.out.println("Estudiante Distancia");
         String nombre = "René";
         String apellido = "Elizalde";
         String identificacion = "110011";
@@ -24,5 +26,21 @@ public class Ejecutor1 {
         estDistancia.calcularMatriculaDistancia();
         
         System.out.println(estDistancia);
+        
+        //Creación de un objeto de tipo EstudiantePresencial
+        
+        System.out.println("======================");
+        System.out.println("Estudiante Presencial");
+        String nom = "Jose";
+        String ape = "Perez";
+        String ident = "11023654";
+        int ed = 26;
+        int numCredito = 10;
+        double costoCredito = 80.5;
+        EstudiantePresencial estupre = new EstudiantePresencial(nom,ape,
+                ident,ed,numCredito,costoCredito);
+        estupre.calcularMatriculaPresencial();
+        
+        System.out.println(estupre);
     }
 }
